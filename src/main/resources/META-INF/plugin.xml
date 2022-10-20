@@ -6,13 +6,9 @@
 
     <depends>com.intellij.modules.platform</depends>
 
-    <extensions defaultExtensionNs="com.intellij">
-        <applicationService serviceImplementation="com.github.igaozp.beson.services.MyApplicationService"/>
-        <projectService serviceImplementation="com.github.igaozp.beson.services.MyProjectService"/>
-    </extensions>
-
-    <applicationListeners>
-        <listener class="com.github.igaozp.beson.listeners.MyProjectManagerListener"
-                  topic="com.intellij.openapi.project.ProjectManagerListener"/>
-    </applicationListeners>
+    <actions>
+        <action class="com.github.igaozp.beson.actions.BesonAction" description="Hello world">
+            <keyboard-shortcut first-keystroke="control shift m" keymap="$default"/>
+        </action>
+    </actions>
 </idea-plugin>
