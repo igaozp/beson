@@ -15,8 +15,4 @@ class BesonAction : AnAction() {
             ), e.project
         )
     }
-
-    override fun update(e: AnActionEvent) {
-        super.update(e)
-    }
 }

@@ -25,5 +25,7 @@
                 id="com.github.igaozp.beson.configuration"
                 displayName="Beson"
         />
+
+        <toolWindow factoryClass="com.github.igaozp.beson.window.BesonToolsWindow" id="Beson" anchor="right"/>
     </extensions>
 </idea-plugin>
