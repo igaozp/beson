@@ -7,8 +7,23 @@
     <depends>com.intellij.modules.platform</depends>
 
     <actions>
-        <action class="com.github.igaozp.beson.actions.BesonAction" description="Hello world">
-            <keyboard-shortcut first-keystroke="control shift m" keymap="$default"/>
+        <action
+                id="beson"
+                class="com.github.igaozp.beson.actions.BesonAction"
+                description="Beson"
+                text="Beson"
+        >
+            <keyboard-shortcut first-keystroke="control shift b" keymap="$default"/>
+            <add-to-group group-id="ToolsMenu" anchor="first"/>
         </action>
     </actions>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <applicationConfigurable
+                parentId="tools"
+                instance="com.github.igaozp.beson.configuration.SettingConfiguration"
+                id="com.github.igaozp.beson.configuration"
+                displayName="Beson"
+        />
+    </extensions>
 </idea-plugin>
